@@ -21,17 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CommandLineClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CommandLineClient.java">
+      <file leaf-file-name="multiThreading.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/multiThreading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+            <state relative-caret-position="240">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#3512#3513#0" expanded="true" />
-                <element signature="e#3583#3584#0" expanded="true" />
-                <element signature="e#3629#3630#0" expanded="true" />
-                <element signature="e#3668#3669#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clientThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3188#3189#0" expanded="true" />
+                <element signature="e#3259#3260#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,6 +88,8 @@
         <option value="$PROJECT_DIR$/src/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/server.java" />
         <option value="$PROJECT_DIR$/src/CommandLineClient.java" />
+        <option value="$PROJECT_DIR$/src/multiThreading.java" />
+        <option value="$PROJECT_DIR$/src/clientThread.java" />
       </list>
     </option>
   </component>
@@ -152,10 +168,25 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CommandLineClient">
+  <component name="RunManager" selected="Application.multiThreading">
     <configuration default="false" name="CommandLineClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="CommandLineClient" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="NewTicTacToe" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="multiThreading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="multiThreading" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -418,12 +449,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.CommandLineClient" />
+      <item index="1" class="java.lang.String" itemvalue="Application.multiThreading" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.CommandLineClient" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.multiThreading" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CommandLineClient" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +474,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="43" width="1260" height="682" extended-state="1" />
+    <frame x="10" y="43" width="1260" height="682" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -515,14 +548,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CommandLineClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        <state relative-caret-position="719">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/multiThreading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#3512#3513#0" expanded="true" />
-            <element signature="e#3583#3584#0" expanded="true" />
-            <element signature="e#3629#3630#0" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clientThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3188#3189#0" expanded="true" />
+            <element signature="e#3259#3260#0" expanded="true" />
           </folding>
         </state>
       </provider>

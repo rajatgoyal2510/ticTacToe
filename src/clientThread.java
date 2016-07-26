@@ -1,29 +1,27 @@
-//package com.directi.training.tictactoe;
-
+/**
+ * Created by rajat.go on 26/07/16.
+ */
 import java.io.*;
 import java.net.*;
-
-import static java.lang.System.out;
-
-public class CommandLineClient {
-    private String player1;
-    private String player2;
+public class clientThread extends Thread{
+    private final Socket socket1, socket2;
+    private String player1, player2;
     private final TicTacToe game = new TicTacToe();
     private final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-
-    public CommandLineClient() {
+    public clientThread(Socket socket1, Socket socket2) {
+        this.socket1 = socket1;
+        this.socket2 = socket2;
+    }
+    public void run() {
         try {
-
-
-            ServerSocket myServerSocket = new ServerSocket(8885);
-
-            Socket socket1 = myServerSocket.accept();
             BufferedReader in1 = new BufferedReader(new InputStreamReader(socket1.getInputStream()));
             PrintStream out1 = new PrintStream(socket1.getOutputStream());
+            BufferedReader in2 = new BufferedReader(new InputStreamReader(socket2.getInputStream()));
+            PrintStream out2 = new PrintStream(socket2.getOutputStream());
 
-            out1.println("Welcome! Tic Tac Toe is a two player game.");
-            out1.print("Enter player one's name: ");
+            out1.println("Second player has joined");
+            out1.print("Player 1 enter your name: ");
             player1 = in1.readLine();
 
             out1.println();
@@ -32,11 +30,7 @@ public class CommandLineClient {
             out1.println(game.drawBoard());
             out1.println();
 
-            Socket socket2 = myServerSocket.accept();
-            BufferedReader in2 = new BufferedReader(new InputStreamReader(socket2.getInputStream()));
-            PrintStream out2 = new PrintStream(socket2.getOutputStream());
-
-            out2.print("Enter player two's name: ");
+            out2.print("Player 2 enter your name: ");
             player2 = in2.readLine();
 
             out2.println();
@@ -60,7 +54,7 @@ public class CommandLineClient {
                 }
 
                 while (!validPick) {
-                    output.print("It is " + currentPlayerName() + "'s turn. Pick a square: ");
+                    output.print(currentPlayerName() + " " + "your turn. Pick a square: ");
 
                     try {
                         int pick = Integer.parseInt(in.readLine());
@@ -95,29 +89,12 @@ public class CommandLineClient {
             }
 
         }
-        catch(IOException e)
-        {
+        catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-  /*  protected String getPrompt() {
-        String prompt = "";
-        try {
-            prompt = reader.readLine();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        return prompt;
-    }
-
-*/
-
     public String currentPlayerName() {
         return game.getCurrentPlayer() == 1 ? player1 : player2;
-    }
-
-    public static void main(String[] args) {
-        new CommandLineClient();
     }
 }
